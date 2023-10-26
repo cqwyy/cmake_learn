@@ -1,0 +1,5 @@
+#define PROJECT_VERSION_MAJOR @PROJECT_VERSION_MAJOR@
+#define PROJECT_VERSION_MINOR @PROJECT_VERSION_MINOR@
+// cmake变量用@包裹
+// 还有一种情况，当cmakelist里设置(set)过变量DATE时，再构建就会在输出文件定义DATE为指定量,没有设置过时，就生成注释--没有被定义
+#cmakedefine DATE "2022.7.12"
